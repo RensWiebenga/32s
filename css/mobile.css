@@ -1,0 +1,51 @@
+.answerContainer {
+	background: #016be1;
+	width:100%;
+	height:420px;
+	position: relative;
+	margin: 50px 0;
+}
+
+.card {
+	border-left:2px solid #fff;
+}
+
+.answerContainer .title {
+	
+
+}
+
+.sideBar {
+	 width:10%;
+	 height:100%;
+}
+
+.sideBar1 {
+	float:left;
+	}
+
+
+.sideBar2 {
+	float:right;
+}
+
+.answers {
+	float:left;
+	text-transform:uppercase;
+	width:80%;
+	background:#5493da;
+	color:#111;
+	padding:30px;
+	box-sizing:border-box;
+	border-left:2px solid #fff;
+	border-right:2px solid #fff;
+}
+
+.answers ul {
+	list-style-type: none;
+}
+
+.answers li {
+	margin:30px;
+	font-size:30px;
+}

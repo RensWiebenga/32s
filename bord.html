@@ -1,0 +1,187 @@
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="javascript/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="data/data.js"></script>
+		<script src="javascript/functions.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="gradientBorder">&nbsp;</div>
+				<img class="left" src="images/logo.png" />
+				<img class="right" src="images/logo.png" />
+				<a href="index.html"><div class="title">3<span class="greenText">2<sup>nd</sup></span>s<br/> <div class="subtitle"><span class="redText">Thirty</span><span class="greenText">Second</span><span class="redText">s</span></div></div></a>
+				
+				<div class="gradientBorder">&nbsp;</div>
+			</div>
+			<div class="overlay">
+			</div>
+			<div class="overlay2">
+			</div>
+			
+
+			<div class="boardContainer">
+
+				<div class="ExplanationOverlay">
+					<img src="images/closeBtn.png" class="closeBtn"/>
+					<img src="images/uitleg.jpg" class="explanationImg"/>
+				</div>
+
+				<div class="player1 player draggable" id="draggable"><div class="name1 coin"></div><img src="images/coin.png"/></div>
+				<div class="player2 player draggable" id="draggable"><div class="name2 coin"></div><img src="images/coin.png"/></div>
+				<div class="player3 player draggable" id="draggable"><div class="name3 coin"></div><img src="images/coin.png"/></div>
+				<div class="player4 player draggable" id="draggable"><div class="name4 coin"></div><img src="images/coin.png"/></div>
+				<div class="inputOverlay">
+					<div class="title">Teams</div>
+					<!-- <img src="images/closeBtn.png" class="closeBtn"/> -->
+					<table>
+						<tr>
+							<td>
+								Teamnaam
+							</td>
+							<td class="hidden">
+								Teamkleur
+							</td> 
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								
+							</td>
+							<td class="hidden">
+								<img class="hueBar" src="images/hueBar.jpg"/>
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" class="namePlayer1 nameInput" onkeyup="addName(1)" placeholder="Team 1" tabindex="1"/>
+							</td>
+							<td class="hidden">
+								<input type="range" class="colorPlayer1 colorSlider" min="0" max="360" default="0" onchange="changeColor(1)"  /><br/>
+							</td>
+							<td>
+								<div class="player1 player"><div class="name1"></div><img src="images/coin.png"/></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								&nbsp;
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input type="text" class="namePlayer2 nameInput" onkeyup="addName(2)" placeholder="Team 2" tabindex="2" disabled/>
+							</td>
+							<td class="hidden">
+								<input type="range" class="colorPlayer2 colorSlider" min="0" max="360" default="0" onchange="changeColor(2)" disabled/><br/>
+							</td>
+							<td>
+								<div class="player2 player"><div class="name2"></div><img src="images/coin.png"/></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" class="namePlayer3 nameInput" onkeyup="addName(3)" placeholder="Team 3" tabindex="3" disabled/>
+							</td>
+							<td class="hidden">
+								<input type="range" class="colorPlayer3 colorSlider" min="0" max="360" default="0" onchange="changeColor(3)" disabled/><br/>
+							</td>
+							<td>
+								<div class="player3 player"><div class="name3"></div><img src="images/coin.png"/></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" class="namePlayer4 nameInput" onkeyup="addName(4)" placeholder="Team 4" tabindex="4" disabled/>
+							</td>
+							<td class="hidden">
+								<input type="range" class="colorPlayer4 colorSlider" min="0" max="360" default="0" onchange="changeColor(4)" disabled/><br/>
+							</td>
+							<td>
+								<div class="player4 player"><div class="name4"></div><img src="images/coin.png"/></div>
+							</td>
+						</tr>
+					</table>
+					<div class="submitBtn btn inactive">Verder</div>
+				</div>
+				
+				<div class="options">
+					<img src="images/cogs.png"/>
+				</div>
+
+				<div class="information">
+					<img src="images/information.png"/>
+				</div>
+
+				<a href="index.html" class="deviceChoice">
+					<img src="images/deviceChoice.png"/>
+				</a>
+
+				<div class="randomNumber">
+					<img src="images/dice0.png"/>
+				</div>
+				
+				<div class="counter hidden">
+					<img src="images/closeBtn.png" class="closeBtn"/>
+					<div class="timeLeft">
+						30
+					</div>
+				</div>
+				<div class="startCounter">
+					<div class="stopWatch"><img src="images/timer.png"/></div>
+				</div>
+				<div class="board">
+
+				</div>
+				
+			</div>
+			
+			
+
+			<div class="audioFiles">
+				<audio class="my_start_audio" controls preload="none">
+					<source src="audio/Windows Balloon.wav" type="audio/wav">
+				</audio>
+				<audio class="my_end_audio" controls preload="none">
+					<source src="audio/tada.wav" type="audio/wav">
+				</audio>
+				<audio class="roll_audio" controls preload="none">
+					<source src="audio/roll.wav" type="audio/wav">
+				</audio>
+				<audio class="click_tick_audio" id="clickTick" preload="none">
+					<source src="audio/clock-tick1.wav" type="audio/wav">
+				</audio>
+			</div>
+		</div>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-89555276-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>
+
