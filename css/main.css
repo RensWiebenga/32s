@@ -851,3 +851,12 @@ input[type=range]:focus::-ms-fill-upper {
 	padding-top:110px;
 	border-radius:30px;
 }
+
+@media screen and (max-width: 480px) {
+	.cardChoiceContainer.btn {
+		font-size: 14px;
+	}
+	.greenBtn, .redBtn {
+		font-size: 24px;
+	}
+}
