@@ -853,7 +853,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media screen and (max-width: 480px) {
-	.cardChoiceContainer.btn {
+	.cardChoiceContainer .btn {
 		font-size: 14px;
 	}
 	.greenBtn, .redBtn {
