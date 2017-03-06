@@ -856,7 +856,7 @@ input[type=range]:focus::-ms-fill-upper {
 	.cardChoiceContainer .btn {
 		font-size: 14px;
 	}
-	.greenBtn, .redBtn {
+	.cardChoiceContainer .greenBtn, .cardChoiceContainer .redBtn {
 		font-size: 24px;
 	}
 }
